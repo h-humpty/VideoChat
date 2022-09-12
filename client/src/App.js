@@ -9,12 +9,13 @@ import Notifications from './components/Notifications';
 const useStyles = makeStyles((theme) => ({
   appBar: {
     borderRadius: 15,
-    margin: '30px 100px',
+    margin: '100px 100px 10px 100px',
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
     width: '600px',
+    height: '80px',
     border: '2px solid black',
 
     [theme.breakpoints.down('xs')]: {
@@ -38,7 +39,7 @@ const App = () => {
   return (
     <div className={classes.wrapper}>
       <AppBar className={classes.appBar} position="static" color="inherit">
-        <Typography variant="h2" align="center">Video Chat</Typography>
+        <Typography variant="h4" align="center">Video Chat</Typography>
       </AppBar>
       <VideoPlayer />
       <Sidebar>
